@@ -10,6 +10,10 @@ def test_with_empty_string():
     """Tests if the function returns True for an empty string."""
     assert is_null_or_empty("") == True, "Failed for empty string"
 
+def test_with_whitespace_string():
+    """Tests if the function returns True for an empty string."""
+    assert is_null_or_empty(" ") == True, "Failed for empty string"
+
 def test_with_empty_list():
     """Tests if the function returns True for an empty list."""
     assert is_null_or_empty([]) == True, "Failed for empty list"
